@@ -1,5 +1,6 @@
 from django.db import models
 
+#EMPLEADOS
 class Empleado(models.Model):
     TURNOS = [
         ('Día', 'Día'),
@@ -19,6 +20,7 @@ class Empleado(models.Model):
     def __str__(self):
         return self.nombre
 
+#JORNADA
 class Jornada(models.Model):
     TIPOS_MARCACION = [
         ('entrada', 'Entrada'),
